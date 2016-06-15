@@ -6,6 +6,9 @@ Unreleased
 
 - Add support for Python 3.4, PyPy3.
 
+- Fix repoze.sendmail in conjunction with pyramid_mailer and attachments with
+  filenames and non ascii characters.
+
 4.2 (2014-02-17)
 ----------------
 

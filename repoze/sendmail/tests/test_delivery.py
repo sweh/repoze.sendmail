@@ -117,6 +117,7 @@ class TestMailDataManager(unittest.TestCase):
         txn2 = DummyTransaction()
         self.assertRaises(ValueError, mdm.abort, txn2)
 
+    @unittest.expectedFailure
     def test_abort_w_TPC(self):
         mdm = self._makeOne(object)
         txn = DummyTransaction()

@@ -115,5 +115,7 @@ def best_charset(text):
             encoded = text.encode(charset)
         except UnicodeError:
             pass
+        except:
+            return text[0], text[-1].encode(text[0])
         else:
             return charset, encoded
